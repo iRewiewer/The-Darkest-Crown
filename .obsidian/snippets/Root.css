@@ -1,0 +1,115 @@
+:root {
+    /* Font Families */
+    --default-font: system-ui, 'Arial';
+    --title-font-family: system-ui, 'Consolas';
+    --desc-font-family: system-ui, 'Calibri';
+    --list-font-family: system-ui, 'Maiandra GD Regular';
+
+    /* Glows */
+    --black-glow: 1px 1px 0px #000000;
+    --white-glow: 1px 1px 0px #FFFFFF;
+    --green-glow: 1.5px 1.5px 0px rgb(0, 180, 0);
+    --lime-glow: 1px 1px 0px #bada55;
+
+    /* Font Size */
+    --title-font-size: 24px;
+    --desc-font-size: 14px;
+    --list-font-size: 18px;
+}
+
+/* Main Classes */
+.title {
+    background-color: rgb(40, 40, 40);
+    font-family: var(--title-font-family);
+    font-weight: bold;
+    font-size: var(--title-font-size);
+    text-shadow: var(--black-glow);
+}
+
+.desc {
+    color: gray;
+    font-family: var(--desc-font-family);
+    font-style: italic;
+    font-size: var(--desc-font-size);
+    text-shadow: var(--black-glow);
+}
+
+.list {
+    font-family: var(--list-font-family);
+    font-size: var(--list-font-size);
+    text-shadow: var(--black-glow);
+}
+
+.inline {
+    display: inline;
+}
+
+/* Separators */
+hr.dashed {
+    border-top: 2px dashed #bbb;
+}
+
+hr.dotted {
+    border-top: 2px dotted #bbb;
+}
+
+hr.solid {
+    border-top: 2px solid #bbb;
+}
+
+/* Colours */
+.gold {
+    color: goldenrod;
+}
+
+.pastelGreen {
+    color: rgb(114, 202, 114);
+}
+
+.pastelRed {
+    color: rgb(249, 130, 130);
+}
+
+.pastelBlue {
+    color: rgb(135, 199, 255);
+}
+
+.pastelYellow {
+    color: rgb(255, 255, 153);
+}
+
+.pastelPurple {
+    color: rgb(150, 155, 255);
+}
+
+.red {
+    color: rgb(224, 24, 24);
+}
+
+.green {
+    color: rgb(49, 206, 49);
+}
+
+.blue {
+    color: rgb(0, 75, 255);
+}
+
+.yellow {
+    color: rgb(251, 251, 65);
+}
+
+.magenta {
+    color: rgb(255, 0, 255);
+}
+
+.purple {
+    color: rgb(166, 38, 166);
+}
+
+.pink {
+    color: rgb(254, 172, 254);
+}
+
+.badass {
+    color: rgb(186, 218, 85); /* BADA55 */
+}

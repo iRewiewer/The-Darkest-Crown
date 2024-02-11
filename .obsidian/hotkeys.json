@@ -1,0 +1,17 @@
+{
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": " "
+    }
+  ],
+  "OA-file-hider:oa-fh-toggle-visibility": [
+    {
+      "modifiers": [],
+      "key": "F1"
+    }
+  ],
+  "app:open-help": []
+}

@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:\"Pop Workplace\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 12260886
+      }
+    },
+    {
+      "query": "path:\"Roti Workplace\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 30694
+      }
+    },
+    {
+      "query": "path:Master  ",
+      "color": {
+        "a": 1,
+        "rgb": 12245589
+      }
+    },
+    {
+      "query": "file:readme",
+      "color": {
+        "a": 1,
+        "rgb": 14713938
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.221902017291066,
+  "repelStrength": 7.55929949013523,
+  "linkStrength": 0.803517328013005,
+  "linkDistance": 179,
+  "scale": 0.833898924797843,
+  "close": true
+}

@@ -1,0 +1,12 @@
+{
+  "accentColor": "#8b6cef",
+  "cssTheme": "Material Gruvbox",
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "hey",
+    "MirrorGame",
+    "Root",
+    "Document"
+  ],
+  "baseFontSize": 17
+}
