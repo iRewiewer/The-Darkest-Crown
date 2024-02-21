@@ -1,10 +1,10 @@
-- [ ] Map design
+- [ ] Map design - All
 	- [ ] 4 zones
 	- [ ] Each with \<x> rooms
 	- [ ] 4th zone just final boss fight no rooms
 - [ ] Combat
-	- [ ] Sword attack(s)
-	- [ ] Powerups
+	- [ ] Sword attack(s) - Roti
+	- [ ] Powerups - Petre
 		- [ ] Firesword ball
 			- [ ] if enemy in front - hits enemy
 			- [ ] if not - shoots ball
@@ -28,14 +28,14 @@
 				- [ ] Petre + zones
 			- [ ] Self
 				- [ ] Can do anything the player can, but better
-	- [ ] Player
+	- [ ] Player - Petre
 		- [ ] Movement
 		- [ ] Attack
 		- [ ] Jump
 			- [ ] Double Jump
 			- [ ] Slide on wall
 			- [ ] Wall jump
-- [ ] UI
+- [ ] UI - Pop
 	- [ ] Menus
 		- [ ] Options
 		- [ ] Dialogue
