@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://crvwl6a1hlhpu"]
+
+[ext_resource type="Script" path="res://scripts/UI/QuitBtn.cs" id="1_vsduf"]
+[ext_resource type="Script" path="res://scripts/UI/MainMenu.cs" id="1_wrlmh"]
+[ext_resource type="PackedScene" uid="uid://tmxquhi0ia8a" path="res://scenes/UI/DebugMenu.tscn" id="2_wrs44"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wrlmh")
+debugMenu = ExtResource("2_wrs44")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 522.0
+offset_top = 541.0
+offset_right = 614.0
+offset_bottom = 572.0
+text = "Quit Game"
+script = ExtResource("1_vsduf")

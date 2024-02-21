@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "The Darkest Crown": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\iRewiewer\\Documents\\Github Tmp\\The-Darkest-Crown\\src\\debug executables\\Godot_v4.2.1-stable_mono_win64.exe",
+      "commandLineArgs": "--path.--verbose",
+      "workingDirectory": ".",
+      "nativeDebugging": true
+    }
+  }
+}
