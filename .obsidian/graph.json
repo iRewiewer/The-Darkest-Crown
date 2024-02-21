@@ -8,31 +8,59 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "path:\"Pop Workplace\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 12260886
-      }
-    },
-    {
-      "query": "path:\"Roti Workplace\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 30694
-      }
-    },
-    {
-      "query": "path:Master  ",
-      "color": {
-        "a": 1,
-        "rgb": 12245589
-      }
-    },
-    {
       "query": "file:readme",
       "color": {
         "a": 1,
         "rgb": 14713938
+      }
+    },
+    {
+      "query": "path:src/assets/tiles  ",
+      "color": {
+        "a": 1,
+        "rgb": 14069084
+      }
+    },
+    {
+      "query": "path:src/assets/sounds  ",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "path:src/assets/sprites/characters  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:src/assets/sprites/UI  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "path:src/assets/sprites/items",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    },
+    {
+      "query": "path:src/assets/sprites/",
+      "color": {
+        "a": 1,
+        "rgb": 6053078
+      }
+    },
+    {
+      "query": "path:.",
+      "color": {
+        "a": 1,
+        "rgb": 11361494
       }
     }
   ],
@@ -46,6 +74,6 @@
   "repelStrength": 7.55929949013523,
   "linkStrength": 0.803517328013005,
   "linkDistance": 179,
-  "scale": 0.833898924797843,
+  "scale": 0.2734402556833514,
   "close": true
 }

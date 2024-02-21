@@ -11,12 +11,8 @@
             "id": "3e7f57652a669827",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "The Darkest Crown/Stuff to do.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Darkest Crown/Stuff to do.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Darkest Crown/Stuff to do.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "The Darkest Crown/Stuff to do.md"
-              }
+              "state": {}
             }
           },
           {
@@ -170,33 +162,39 @@
   },
   "active": "3e7f57652a669827",
   "lastOpenFiles": [
-    "Planning/Stuff to do.md",
-    "The Darkest Crown/Stuff to do.md",
-    "The Darkest Crown/The Darkest Crown.md",
-    "Planning/Mini-Jams.md",
+    "src/assets/tiles/gothicvania church files/PSD/title-screen.psd",
+    "src/assets/tiles/gothicvania church files/PSD/concepts.psd",
+    "src/assets/tiles/gothicvania church files/PSD/PSD.md",
+    "src/assets/tiles/gothicvania church files/PSD",
+    "src/assets/tiles/gothicvania church files/gothicvania church files.md",
+    "src/assets/tiles/gothicvania church files",
+    "src/src.md",
+    "src/assets/assets.md",
+    "src/assets/Aseprite/Aseprite.md",
+    "src/assets/sounds/sounds.md",
+    "src/assets/tiles/tiles.md",
+    "src/assets/sprites/sprites.md",
+    "src/assets/tiles/Old-dark-Castle-tileset-Files/Old-dark-Castle-tileset-Files.md",
+    "src/assets/tiles/Old-dark-Castle-tileset-Files/PSD/PSD.md",
+    "src/assets/tiles/Old-dark-Castle-tileset-Files/PNG/PNG.md",
+    "src/assets/tiles/gothicvania patreon collection/gothicvania patreon collection.md",
+    "src/assets/tiles/gothicvania patreon collection/night-town-background-files/night-town-background-files.md",
+    "src/assets/tiles/gothicvania patreon collection/night-town-background-files/layers/layers.md",
+    "src/assets/tiles/Gothic-Horror-Files/Gothic-Horror-Files.md",
+    "src/assets/tiles/Gothic-Horror-Files/PSD/PSD.md",
+    "src/assets/tiles/Gothic-Horror-Files/PNG/PNG.md",
+    "src/assets/tiles/Gothic-Horror-Files/PNG/layers/layers.md",
+    "src/assets/tiles/Gothic-Castle-Files/Gothic-Castle-Files.md",
+    "src/assets/tiles/Gothic-Castle-Files/PSD/PSD.md",
+    "src/assets/tiles/Gothic-Castle-Files/PNG/PNG.md",
+    "src/assets/tiles/Gothic-Castle-Files/PNG/layers/layers.md",
+    "src/assets/tiles/environment2/environment2.md",
+    "src/assets/tiles/ENVIRONMENT/ENVIRONMENT.md",
+    "src/assets/sprites/UI/UI.md",
+    "src/assets/sprites/characters/Ghost-Files/GIFS/ghost-appears.gif",
+    "src/assets/sprites/characters/04-Pig Throwing a Box/Throwing Box (26x30).png",
+    "src/assets/sounds/ockaie_temple.ogg",
     "The Darkest Crown",
-    "Pop Workplace/Main Story/001 History of The World.md",
-    "Master/Master.md",
-    "Master/Inspiration.md",
-    "Master/Side Quests/Side Quests.md",
-    "Master/Side Quests/001 (0-1) Old sword, older story.md",
-    "Master/Main Story/Main Story.md",
-    "Pop Workplace/Pop Workplace.md",
-    "Pop Workplace/Main Story/Main Story.md",
-    "Pop Workplace/Main Story/004 Act 1 - The Jailor.md",
-    "Pop Workplace/Main Story/005 Act 2 - Preparation.md",
-    "Pop Workplace/Main Story/006 Act 3 - War.md",
-    "Pop Workplace/Main Story/009 Act 6 - Finale.md",
-    "Pop Workplace/Main Story/008 Act 5 - Silence.md",
-    "Pop Workplace/Main Story/007 Act 4 - Madness.md",
-    "Planning/Planning.md",
-    "Pop Workplace/Current Changelog.md",
-    "Roti Workplace/Roti Workplace.md",
-    "Roti Workplace/Mirror Game.md",
-    "README.md",
-    "Planning",
-    "Planning.md",
-    "Pop Workplace/Scribbles.md",
-    "Roti Workplace/Characters/Characters.md"
+    "Planning"
   ]
 }
