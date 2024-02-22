@@ -11,8 +11,12 @@
             "id": "3e7f57652a669827",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "src/assets/Aseprite/Aseprite.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "src/assets/Aseprite/Aseprite.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "src/assets/Aseprite/Aseprite.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "src/assets/Aseprite/Aseprite.md"
+              }
             }
           },
           {
@@ -162,35 +170,36 @@
   },
   "active": "3e7f57652a669827",
   "lastOpenFiles": [
+    "src/assets/sounds/sounds.md",
+    "src/assets/sprites/sprites.md",
+    "src/assets/tiles/tiles.md",
+    "src/assets/assets.md",
+    "src/debug_executables/debug_executables.md",
+    "src/debug_executables/GodotSharp/GodotSharp.md",
+    "src/debug_executables/GodotSharp/Api/Debug/Debug.md",
+    "src/debug_executables/GodotSharp/Api/Release/Release.md",
+    "src/debug_executables/GodotSharp/Tools/nupkgs/nupkgs.md",
+    "src/debug_executables/GodotSharp/Api/Api.md",
+    "src/debug_executables/GodotSharp/Tools/Tools.md",
+    "src/Properties/Properties.md",
+    "src/scenes/scenes.md",
+    "src/scenes/entities/entities.md",
+    "src/scenes/maps/maps.md",
+    "src/scenes/objects/objects.md",
+    "src/scenes/UI/UI.md",
+    "src/scripts/scripts.md",
+    "src/scripts/UI/UI.md",
+    "src/src.md",
+    "Dashboard.md",
     "src/assets/tiles/gothicvania church files/PSD/title-screen.psd",
     "src/assets/tiles/gothicvania church files/PSD/concepts.psd",
     "src/assets/tiles/gothicvania church files/PSD/PSD.md",
     "src/assets/tiles/gothicvania church files/PSD",
     "src/assets/tiles/gothicvania church files/gothicvania church files.md",
     "src/assets/tiles/gothicvania church files",
-    "src/src.md",
-    "src/assets/assets.md",
     "src/assets/Aseprite/Aseprite.md",
-    "src/assets/sounds/sounds.md",
-    "src/assets/tiles/tiles.md",
-    "src/assets/sprites/sprites.md",
     "src/assets/tiles/Old-dark-Castle-tileset-Files/Old-dark-Castle-tileset-Files.md",
     "src/assets/tiles/Old-dark-Castle-tileset-Files/PSD/PSD.md",
-    "src/assets/tiles/Old-dark-Castle-tileset-Files/PNG/PNG.md",
-    "src/assets/tiles/gothicvania patreon collection/gothicvania patreon collection.md",
-    "src/assets/tiles/gothicvania patreon collection/night-town-background-files/night-town-background-files.md",
-    "src/assets/tiles/gothicvania patreon collection/night-town-background-files/layers/layers.md",
-    "src/assets/tiles/Gothic-Horror-Files/Gothic-Horror-Files.md",
-    "src/assets/tiles/Gothic-Horror-Files/PSD/PSD.md",
-    "src/assets/tiles/Gothic-Horror-Files/PNG/PNG.md",
-    "src/assets/tiles/Gothic-Horror-Files/PNG/layers/layers.md",
-    "src/assets/tiles/Gothic-Castle-Files/Gothic-Castle-Files.md",
-    "src/assets/tiles/Gothic-Castle-Files/PSD/PSD.md",
-    "src/assets/tiles/Gothic-Castle-Files/PNG/PNG.md",
-    "src/assets/tiles/Gothic-Castle-Files/PNG/layers/layers.md",
-    "src/assets/tiles/environment2/environment2.md",
-    "src/assets/tiles/ENVIRONMENT/ENVIRONMENT.md",
-    "src/assets/sprites/UI/UI.md",
     "src/assets/sprites/characters/Ghost-Files/GIFS/ghost-appears.gif",
     "src/assets/sprites/characters/04-Pig Throwing a Box/Throwing Box (26x30).png",
     "src/assets/sounds/ockaie_temple.ogg",
