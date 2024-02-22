@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjxot0tecx0s7"]
+
+[ext_resource type="Texture2D" uid="uid://d4h7hqwydavgt" path="res://assets/tiles/environment2/background.png" id="1_lqujm"]
+[ext_resource type="Texture2D" uid="uid://bh740muxw5dds" path="res://assets/tiles/environment2/columns.png" id="2_8kjyo"]
+[ext_resource type="Texture2D" uid="uid://bpvr6a77y377k" path="res://assets/sprites/characters/player/sprites/crouch2.png" id="3_w6am3"]
+
+[node name="map0" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(1567.47, 324.5)
+scale = Vector2(2.90625, 2.90625)
+texture = ExtResource("1_lqujm")
+
+[node name="Columns" type="Sprite2D" parent="."]
+position = Vector2(196, 400)
+scale = Vector2(2.62054, 2.62054)
+texture = ExtResource("2_8kjyo")
+
+[node name="Crouch2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(271.033, 466)
+scale = Vector2(5.63333, 5.63333)
+texture = ExtResource("3_w6am3")

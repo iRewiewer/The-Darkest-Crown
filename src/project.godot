@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Darkest Crown"
-run/main_scene="res://scenes/UI/MainMenu.tscn"
+run/main_scene="res://scenes/UI/MainMenu/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
 
 [dotnet]

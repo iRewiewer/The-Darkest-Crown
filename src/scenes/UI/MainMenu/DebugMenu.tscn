@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://tmxquhi0ia8a"]
+[gd_scene load_steps=4 format=3 uid="uid://tmxquhi0ia8a"]
 
-[ext_resource type="Script" path="res://scripts/UI/DebugMenu.cs" id="1_bprbf"]
+[ext_resource type="Script" path="res://scripts/UI/MainMenu/DebugMenu.cs" id="1_bprbf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_tdsm0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_1k8me"]
 
 [node name="DebugMenu" type="Control"]
 layout_mode = 3
@@ -11,15 +15,16 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bprbf")
 
-[node name="DebugLabel" type="Label" parent="."]
+[node name="DebugMenu" type="Label" parent="."]
 layout_mode = 0
-offset_left = 999.0
-offset_top = 21.0
-offset_right = 1123.0
-offset_bottom = 47.0
+offset_left = 1010.0
+offset_top = 17.0
+offset_right = 1134.0
+offset_bottom = 43.0
 text = "Debug Controls:"
+label_settings = SubResource("LabelSettings_tdsm0")
 
-[node name="GodMode" type="CheckButton" parent="DebugLabel"]
+[node name="GodMode" type="CheckButton" parent="DebugMenu"]
 layout_mode = 0
 offset_left = 1.0
 offset_top = 30.0
@@ -27,7 +32,7 @@ offset_right = 129.0
 offset_bottom = 61.0
 text = "God Mode"
 
-[node name="SkipMap" type="Button" parent="DebugLabel"]
+[node name="SkipMap" type="Button" parent="DebugMenu"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 68.0
@@ -35,7 +40,7 @@ offset_right = 98.0
 offset_bottom = 99.0
 text = "Skip Map"
 
-[node name="KillAura" type="Button" parent="DebugLabel"]
+[node name="KillAura" type="Button" parent="DebugMenu"]
 layout_mode = 0
 offset_left = 19.0
 offset_top = 114.0
@@ -43,7 +48,7 @@ offset_right = 98.0
 offset_bottom = 145.0
 text = "Kill aura"
 
-[node name="PowerupFiresword" type="Button" parent="DebugLabel"]
+[node name="PowerupFiresword" type="Button" parent="DebugMenu"]
 layout_mode = 0
 offset_left = -1.0
 offset_top = 157.0
@@ -51,7 +56,7 @@ offset_right = 122.0
 offset_bottom = 188.0
 text = "Give Firesword"
 
-[node name="PowerupLightning" type="Button" parent="DebugLabel"]
+[node name="PowerupLightning" type="Button" parent="DebugMenu"]
 layout_mode = 0
 offset_left = -2.0
 offset_top = 201.0
@@ -59,7 +64,7 @@ offset_right = 121.0
 offset_bottom = 232.0
 text = "Give Lightning"
 
-[node name="PowerupLunge" type="Button" parent="DebugLabel"]
+[node name="PowerupLunge" type="Button" parent="DebugMenu"]
 layout_mode = 0
 offset_left = -1.0
 offset_top = 247.0
@@ -67,17 +72,26 @@ offset_right = 122.0
 offset_bottom = 278.0
 text = "Give Lunge"
 
-[node name="PowerupShield" type="Button" parent="DebugLabel"]
+[node name="PowerupShield" type="Button" parent="DebugMenu"]
 layout_mode = 0
 offset_top = 293.0
 offset_right = 123.0
 offset_bottom = 324.0
 text = "Give Shield"
 
-[node name="PowerupHeal" type="Button" parent="DebugLabel"]
+[node name="PowerupHeal" type="Button" parent="DebugMenu"]
 layout_mode = 0
 offset_left = -1.0
 offset_top = 337.0
 offset_right = 122.0
 offset_bottom = 368.0
 text = "Give Heal"
+
+[node name="DebugData" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 14.0
+offset_right = 107.0
+offset_bottom = 37.0
+text = "Debug Data"
+label_settings = SubResource("LabelSettings_1k8me")

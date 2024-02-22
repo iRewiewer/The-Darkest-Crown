@@ -2,6 +2,12 @@ using Godot;
 
 public partial class QuitBtn : Button
 {
+	#region Public variables
+	#endregion
+	#region Private variables
+	#endregion
+
+	#region Public methods
 	public override void _Ready()
 	{
 		this.Pressed += ButtonPressed;
@@ -11,17 +17,15 @@ public partial class QuitBtn : Button
 	{
 		if (Input.IsActionPressed("quitGame"))
 		{
-			QuitGame(this);
+			DebugMenu.QuitGame(this);
 		}
 	}
 
 	public void ButtonPressed()
 	{
-		QuitGame(this);
+		DebugMenu.QuitGame(this);
 	}
-
-	public static void QuitGame(Node node)
-	{
-		node.GetTree().Quit();
-	}
+	#endregion
+	#region Private methods
+	#endregion
 }

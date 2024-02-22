@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://crvwl6a1hlhpu"]
+
+[ext_resource type="Script" path="res://scripts/UI/MainMenu/QuitBtn.cs" id="1_vsduf"]
+[ext_resource type="Script" path="res://scripts/UI/MainMenu/MainMenu.cs" id="1_wrlmh"]
+[ext_resource type="PackedScene" uid="uid://tmxquhi0ia8a" path="res://scenes/UI/MainMenu/DebugMenu.tscn" id="2_wrs44"]
+[ext_resource type="Script" path="res://scripts/UI/MainMenu/PlayBtn.cs" id="3_4sbdu"]
+[ext_resource type="PackedScene" uid="uid://dhvo4mqi0w6a5" path="res://scenes/UI/MainMenu/PlayMenu.tscn" id="4_icxnr"]
+[ext_resource type="Script" path="res://scripts/UI/MainMenu/OptionsBtn.cs" id="4_qsemp"]
+[ext_resource type="PackedScene" uid="uid://b5s1xf7sc7spd" path="res://scenes/UI/MainMenu/OptionsMenu.tscn" id="6_58bto"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wrlmh")
+debugMenu = ExtResource("2_wrs44")
+
+[node name="PlayBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 475.0
+offset_top = 243.0
+offset_right = 644.0
+offset_bottom = 300.0
+text = "Play"
+script = ExtResource("3_4sbdu")
+playMenu = ExtResource("4_icxnr")
+
+[node name="OptionsBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 351.0
+offset_right = 642.0
+offset_bottom = 408.0
+text = "Options"
+script = ExtResource("4_qsemp")
+optionsMenu = ExtResource("6_58bto")
+
+[node name="QuitBtn" type="Button" parent="."]
+layout_mode = 0
+offset_left = 473.0
+offset_top = 455.0
+offset_right = 642.0
+offset_bottom = 512.0
+text = "Quit
+"
+script = ExtResource("1_vsduf")
