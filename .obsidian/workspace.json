@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "eec981858e192dcd",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +179,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3e7f57652a669827",
+  "active": "eec981858e192dcd",
   "lastOpenFiles": [
     "src/assets/sounds/sounds.md",
     "src/assets/sprites/sprites.md",

@@ -11,12 +11,22 @@ public partial class PlayGameBtn : Button
 	public override void _Ready()
 	{
 		this.Pressed += ButtonPressed;
-	}
-	public void ButtonPressed()
-	{
-		GetTree().ChangeSceneToFile(Const.queenDemoPath);
+		this.MouseEntered += OnHoverEnter;
+		this.MouseExited += OnHoverExit;
 	}
 	#endregion
 	#region Private methods
+	private void ButtonPressed()
+	{
+		GetTree().ChangeSceneToFile(Const.queenDemoPath);
+	}
+	private void OnHoverEnter()
+	{
+		this.Icon = Const.hoverTexture;
+	}
+	private void OnHoverExit()
+	{
+		this.Icon = Const.normalTexture;
+	}
 	#endregion
 }

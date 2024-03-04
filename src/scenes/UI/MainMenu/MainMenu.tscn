@@ -1,12 +1,15 @@
-[gd_scene load_steps=8 format=3 uid="uid://crvwl6a1hlhpu"]
+[gd_scene load_steps=11 format=3 uid="uid://crvwl6a1hlhpu"]
 
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/QuitBtn.cs" id="1_vsduf"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/MainMenu.cs" id="1_wrlmh"]
 [ext_resource type="PackedScene" uid="uid://tmxquhi0ia8a" path="res://scenes/UI/MainMenu/DebugMenu.tscn" id="2_wrs44"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/PlayBtn.cs" id="3_4sbdu"]
-[ext_resource type="PackedScene" uid="uid://dhvo4mqi0w6a5" path="res://scenes/UI/MainMenu/PlayMenu.tscn" id="4_icxnr"]
+[ext_resource type="Texture2D" uid="uid://br0uncdbemx2" path="res://assets/UI/MainMenu/background_original.png" id="3_8xsgm"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/OptionsBtn.cs" id="4_qsemp"]
-[ext_resource type="PackedScene" uid="uid://b5s1xf7sc7spd" path="res://scenes/UI/MainMenu/OptionsMenu.tscn" id="6_58bto"]
+[ext_resource type="Texture2D" uid="uid://b7e7e67sclail" path="res://assets/UI/MainMenu/silver_button.png" id="4_vy4kv"]
+[ext_resource type="Texture2D" uid="uid://nlot76ob0gvb" path="res://assets/UI/MainMenu/play.png" id="6_l3suk"]
+[ext_resource type="Texture2D" uid="uid://b00lkifn10p7w" path="res://assets/UI/MainMenu/options.png" id="8_1clgi"]
+[ext_resource type="Texture2D" uid="uid://cywlisa0qu187" path="res://assets/UI/MainMenu/title_1.png" id="11_1nrec"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -14,32 +17,66 @@ anchors_preset = 0
 script = ExtResource("1_wrlmh")
 debugMenu = ExtResource("2_wrs44")
 
+[node name="BackgroundOriginal" type="Sprite2D" parent="."]
+position = Vector2(575, 323)
+scale = Vector2(1.7, 1.69792)
+texture = ExtResource("3_8xsgm")
+
 [node name="PlayBtn" type="Button" parent="."]
+texture_filter = 1
 layout_mode = 0
-offset_left = 475.0
-offset_top = 243.0
-offset_right = 644.0
-offset_bottom = 300.0
-text = "Play"
+offset_left = 314.0
+offset_top = 233.0
+offset_right = 941.0
+offset_bottom = 372.0
+scale = Vector2(0.748441, 0.798249)
+icon = ExtResource("4_vy4kv")
+flat = true
+icon_alignment = 1
+expand_icon = true
 script = ExtResource("3_4sbdu")
-playMenu = ExtResource("4_icxnr")
+
+[node name="Play" type="Sprite2D" parent="PlayBtn"]
+position = Vector2(324, 71)
+texture = ExtResource("6_l3suk")
 
 [node name="OptionsBtn" type="Button" parent="."]
+texture_filter = 1
 layout_mode = 0
-offset_left = 473.0
-offset_top = 351.0
-offset_right = 642.0
-offset_bottom = 408.0
-text = "Options"
+offset_left = 289.0
+offset_top = 365.0
+offset_right = 982.0
+offset_bottom = 504.0
+scale = Vector2(0.748793, 0.800707)
+icon = ExtResource("4_vy4kv")
+flat = true
+icon_alignment = 1
 script = ExtResource("4_qsemp")
-optionsMenu = ExtResource("6_58bto")
+
+[node name="Options" type="Sprite2D" parent="OptionsBtn"]
+position = Vector2(349, 67)
+texture = ExtResource("8_1clgi")
 
 [node name="QuitBtn" type="Button" parent="."]
+texture_filter = 1
 layout_mode = 0
-offset_left = 473.0
-offset_top = 455.0
-offset_right = 642.0
-offset_bottom = 512.0
-text = "Quit
+offset_left = 304.0
+offset_top = 500.0
+offset_right = 969.0
+offset_bottom = 639.0
+scale = Vector2(0.746255, 0.83598)
+text = "
 "
+icon = ExtResource("4_vy4kv")
+flat = true
+icon_alignment = 1
 script = ExtResource("1_vsduf")
+
+[node name="Quit" type="Sprite2D" parent="QuitBtn"]
+position = Vector2(340.366, 70.5758)
+texture = ExtResource("8_1clgi")
+
+[node name="Title1" type="Sprite2D" parent="."]
+position = Vector2(573, 94)
+scale = Vector2(1.34354, 1.34354)
+texture = ExtResource("11_1nrec")
