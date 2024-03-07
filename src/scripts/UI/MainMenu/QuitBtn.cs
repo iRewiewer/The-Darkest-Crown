@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class QuitBtn : Button
+public partial class QuitBtn : TextureButton
 {
 	#region Public variables
 	#endregion
@@ -11,8 +11,6 @@ public partial class QuitBtn : Button
 	public override void _Ready()
 	{
 		this.Pressed += ButtonPressed;
-		this.MouseEntered += OnHoverEnter;
-		this.MouseExited += OnHoverExit;
 	}
 
 	public override void _Process(double delta)
@@ -25,17 +23,10 @@ public partial class QuitBtn : Button
 
 	public void ButtonPressed()
 	{
+		GetNode<SoundFx>("/root/SoundFx").ButtonPressSound();
 		DebugMenu.QuitGame(this);
 	}
 	#endregion
 	#region Private methods
-	private void OnHoverEnter()
-	{
-		this.Icon = Const.hoverTexture;
-	}
-	private void OnHoverExit()
-	{
-		this.Icon = Const.normalTexture;
-	}
 	#endregion
 }

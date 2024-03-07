@@ -1,6 +1,7 @@
 using Godot;
+using System.Threading;
 
-public partial class PlayBtn : Button
+public partial class PlayBtn : TextureButton
 {
 	#region Public variables
 	#endregion
@@ -11,22 +12,13 @@ public partial class PlayBtn : Button
 	public override void _Ready()
 	{
 		this.Pressed += ButtonPressed;
-		this.MouseEntered += OnHoverEnter;
-		this.MouseExited += OnHoverExit;
 	}
 	#endregion
 	#region Private methods
 	private void ButtonPressed()
 	{
+		GetNode<SoundFx>("/root/SoundFx").ButtonPressSound();
 		GetTree().ChangeSceneToFile(Const.playMenuPath);
-	}
-	private void OnHoverEnter()
-	{
-		this.Icon = Const.hoverTexture;
-	}
-	private void OnHoverExit()
-	{
-		this.Icon = Const.normalTexture;
 	}
 	#endregion
 }

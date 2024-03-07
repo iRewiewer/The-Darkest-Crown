@@ -14,6 +14,10 @@ config/name="The Darkest Crown"
 run/main_scene="res://scenes/UI/MainMenu/MainMenu.tscn"
 config/features=PackedStringArray("4.2", "C#", "GL Compatibility")
 
+[autoload]
+
+SoundFx="*res://autoload/SoundFx.tscn"
+
 [dotnet]
 
 project/assembly_name="The Darkest Crown"

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx7ern6t46yeg"
-path="res://.godot/imported/bronze_button.png-9b6a57b134ab74718036b8ec23b8b45c.ctex"
+uid="uid://dw5c4oj35ojpk"
+path="res://.godot/imported/btnPress.png-bd8142a18300a51e00908f7cede71923.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/MainMenu/bronze_button.png"
-dest_files=["res://.godot/imported/bronze_button.png-9b6a57b134ab74718036b8ec23b8b45c.ctex"]
+source_file="res://assets/UI/MainMenu/btnPress.png"
+dest_files=["res://.godot/imported/btnPress.png-bd8142a18300a51e00908f7cede71923.ctex"]
 
 [params]
 

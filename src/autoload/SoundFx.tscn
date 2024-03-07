@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c13jimvcsak3m"]
+
+[ext_resource type="Script" path="res://autoload/SoundFx.cs" id="1_icowp"]
+[ext_resource type="AudioStream" uid="uid://vldti2f54chg" path="res://assets/sounds/UI/btnPress.wav" id="2_werdk"]
+
+[node name="SoundFx" type="Node"]
+script = ExtResource("1_icowp")
+
+[node name="BtnPressPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_werdk")

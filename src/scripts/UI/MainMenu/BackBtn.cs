@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class BackBtn : Button
+public partial class BackBtn : TextureButton
 {
 	#region Public variables
 	#endregion
@@ -14,6 +14,7 @@ public partial class BackBtn : Button
 	}
 	public void ButtonPressed()
 	{
+		GetNode<SoundFx>("/root/SoundFx").ButtonPressSound();
 		GetTree().ChangeSceneToFile(Const.mainMenuPath);
 	}
 	#endregion

@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class PlayGameBtn : Button
+public partial class PlayGameBtn : TextureButton
 {
 	#region Public variables
 	#endregion
@@ -11,22 +11,13 @@ public partial class PlayGameBtn : Button
 	public override void _Ready()
 	{
 		this.Pressed += ButtonPressed;
-		this.MouseEntered += OnHoverEnter;
-		this.MouseExited += OnHoverExit;
 	}
 	#endregion
 	#region Private methods
 	private void ButtonPressed()
 	{
+		GetNode<SoundFx>("/root/SoundFx").ButtonPressSound();
 		GetTree().ChangeSceneToFile(Const.queenDemoPath);
-	}
-	private void OnHoverEnter()
-	{
-		this.Icon = Const.hoverTexture;
-	}
-	private void OnHoverExit()
-	{
-		this.Icon = Const.normalTexture;
 	}
 	#endregion
 }

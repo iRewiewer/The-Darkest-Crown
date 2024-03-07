@@ -1,15 +1,25 @@
-[gd_scene load_steps=11 format=3 uid="uid://crvwl6a1hlhpu"]
+[gd_scene load_steps=13 format=3 uid="uid://crvwl6a1hlhpu"]
 
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/QuitBtn.cs" id="1_vsduf"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/MainMenu.cs" id="1_wrlmh"]
 [ext_resource type="PackedScene" uid="uid://tmxquhi0ia8a" path="res://scenes/UI/MainMenu/DebugMenu.tscn" id="2_wrs44"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/PlayBtn.cs" id="3_4sbdu"]
-[ext_resource type="Texture2D" uid="uid://br0uncdbemx2" path="res://assets/UI/MainMenu/background_original.png" id="3_8xsgm"]
+[ext_resource type="Texture2D" uid="uid://b0n62katgrr27" path="res://assets/UI/MainMenu/bground.png" id="3_hgxaa"]
+[ext_resource type="Texture2D" uid="uid://5ano7sxpov3l" path="res://assets/UI/MainMenu/title.png" id="4_k6od1"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/OptionsBtn.cs" id="4_qsemp"]
-[ext_resource type="Texture2D" uid="uid://b7e7e67sclail" path="res://assets/UI/MainMenu/silver_button.png" id="4_vy4kv"]
-[ext_resource type="Texture2D" uid="uid://nlot76ob0gvb" path="res://assets/UI/MainMenu/play.png" id="6_l3suk"]
-[ext_resource type="Texture2D" uid="uid://b00lkifn10p7w" path="res://assets/UI/MainMenu/options.png" id="8_1clgi"]
-[ext_resource type="Texture2D" uid="uid://cywlisa0qu187" path="res://assets/UI/MainMenu/title_1.png" id="11_1nrec"]
+[ext_resource type="Texture2D" uid="uid://vt5mwwnfbur2" path="res://assets/UI/MainMenu/btnNormal.png" id="5_btafc"]
+[ext_resource type="Texture2D" uid="uid://dw5c4oj35ojpk" path="res://assets/UI/MainMenu/btnPress.png" id="6_2e0da"]
+[ext_resource type="Texture2D" uid="uid://cmahkp8hg823v" path="res://assets/UI/MainMenu/btnHover.png" id="7_gmv12"]
+[ext_resource type="FontFile" uid="uid://uvh2nwjnhknb" path="res://assets/fonts/enchanted_land.otf" id="13_6qme7"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ltagt"]
+font = ExtResource("13_6qme7")
+font_size = 82
+font_color = Color(0.435294, 0.313726, 0.380392, 1)
+outline_size = 7
+outline_color = Color(0.776471, 0.65098, 0.717647, 1)
+shadow_size = 6
+shadow_color = Color(0, 0, 0, 1)
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -20,63 +30,94 @@ debugMenu = ExtResource("2_wrs44")
 [node name="BackgroundOriginal" type="Sprite2D" parent="."]
 position = Vector2(575, 323)
 scale = Vector2(1.7, 1.69792)
-texture = ExtResource("3_8xsgm")
+texture = ExtResource("3_hgxaa")
 
-[node name="PlayBtn" type="Button" parent="."]
+[node name="Title" type="Sprite2D" parent="."]
 texture_filter = 1
-layout_mode = 0
-offset_left = 314.0
-offset_top = 233.0
-offset_right = 941.0
-offset_bottom = 372.0
-scale = Vector2(0.748441, 0.798249)
-icon = ExtResource("4_vy4kv")
-flat = true
-icon_alignment = 1
-expand_icon = true
-script = ExtResource("3_4sbdu")
-
-[node name="Play" type="Sprite2D" parent="PlayBtn"]
-position = Vector2(324, 71)
-texture = ExtResource("6_l3suk")
-
-[node name="OptionsBtn" type="Button" parent="."]
-texture_filter = 1
-layout_mode = 0
-offset_left = 289.0
-offset_top = 365.0
-offset_right = 982.0
-offset_bottom = 504.0
-scale = Vector2(0.748793, 0.800707)
-icon = ExtResource("4_vy4kv")
-flat = true
-icon_alignment = 1
-script = ExtResource("4_qsemp")
-
-[node name="Options" type="Sprite2D" parent="OptionsBtn"]
-position = Vector2(349, 67)
-texture = ExtResource("8_1clgi")
-
-[node name="QuitBtn" type="Button" parent="."]
-texture_filter = 1
-layout_mode = 0
-offset_left = 304.0
-offset_top = 500.0
-offset_right = 969.0
-offset_bottom = 639.0
-scale = Vector2(0.746255, 0.83598)
-text = "
-"
-icon = ExtResource("4_vy4kv")
-flat = true
-icon_alignment = 1
-script = ExtResource("1_vsduf")
-
-[node name="Quit" type="Sprite2D" parent="QuitBtn"]
-position = Vector2(340.366, 70.5758)
-texture = ExtResource("8_1clgi")
-
-[node name="Title1" type="Sprite2D" parent="."]
 position = Vector2(573, 94)
 scale = Vector2(1.34354, 1.34354)
-texture = ExtResource("11_1nrec")
+texture = ExtResource("4_k6od1")
+
+[node name="PlayBtn" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 347.0
+offset_top = 251.0
+offset_right = 2565.0
+offset_bottom = 718.0
+scale = Vector2(0.202794, 0.202794)
+texture_normal = ExtResource("5_btafc")
+texture_pressed = ExtResource("6_2e0da")
+texture_hover = ExtResource("7_gmv12")
+script = ExtResource("3_4sbdu")
+
+[node name="CenterContainer" type="CenterContainer" parent="PlayBtn"]
+layout_mode = 0
+offset_left = 897.122
+offset_top = 50.4875
+offset_right = 1014.12
+offset_bottom = 147.487
+scale = Vector2(3.60365, 3.60365)
+
+[node name="Label" type="Label" parent="PlayBtn/CenterContainer"]
+layout_mode = 2
+text = "Play"
+label_settings = SubResource("LabelSettings_ltagt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OptionsBtn" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 348.0
+offset_top = 373.0
+offset_right = 2566.0
+offset_bottom = 840.0
+scale = Vector2(0.203262, 0.203262)
+texture_normal = ExtResource("5_btafc")
+texture_pressed = ExtResource("6_2e0da")
+texture_hover = ExtResource("7_gmv12")
+script = ExtResource("4_qsemp")
+
+[node name="CenterContainer" type="CenterContainer" parent="OptionsBtn"]
+layout_mode = 0
+offset_left = 780.613
+offset_top = 42.7201
+offset_right = 957.613
+offset_bottom = 139.72
+scale = Vector2(3.60365, 3.60365)
+
+[node name="Label" type="Label" parent="OptionsBtn/CenterContainer"]
+layout_mode = 2
+text = "Options"
+label_settings = SubResource("LabelSettings_ltagt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitBtn" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 352.0
+offset_top = 501.0
+offset_right = 2570.0
+offset_bottom = 968.0
+scale = Vector2(0.203101, 0.203101)
+texture_normal = ExtResource("5_btafc")
+texture_pressed = ExtResource("6_2e0da")
+texture_hover = ExtResource("7_gmv12")
+script = ExtResource("1_vsduf")
+
+[node name="CenterContainer" type="CenterContainer" parent="QuitBtn"]
+layout_mode = 0
+offset_left = 881.588
+offset_top = 46.6038
+offset_right = 998.588
+offset_bottom = 143.604
+scale = Vector2(3.60365, 3.60365)
+
+[node name="Label" type="Label" parent="QuitBtn/CenterContainer"]
+layout_mode = 2
+text = "Quit"
+label_settings = SubResource("LabelSettings_ltagt")
+horizontal_alignment = 1
+vertical_alignment = 1

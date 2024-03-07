@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7e7e67sclail"
-path="res://.godot/imported/silver_button.png-718078aec3c18ef2b191497df93013af.ctex"
+uid="uid://5ano7sxpov3l"
+path="res://.godot/imported/title.png-4b686ab8ed022fe9311e0791bc753b7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/MainMenu/silver_button.png"
-dest_files=["res://.godot/imported/silver_button.png-718078aec3c18ef2b191497df93013af.ctex"]
+source_file="res://assets/UI/MainMenu/title.png"
+dest_files=["res://.godot/imported/title.png-4b686ab8ed022fe9311e0791bc753b7a.ctex"]
 
 [params]
 

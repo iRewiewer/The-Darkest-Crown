@@ -1,11 +1,25 @@
-[gd_scene load_steps=4 format=3 uid="uid://b5s1xf7sc7spd"]
+[gd_scene load_steps=10 format=3 uid="uid://b5s1xf7sc7spd"]
 
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/BackBtn.cs" id="1_x6u3n"]
+[ext_resource type="Texture2D" uid="uid://b0n62katgrr27" path="res://assets/UI/MainMenu/bground.png" id="2_co2qr"]
+[ext_resource type="Texture2D" uid="uid://vt5mwwnfbur2" path="res://assets/UI/MainMenu/btnNormal.png" id="2_swbkw"]
+[ext_resource type="Texture2D" uid="uid://dw5c4oj35ojpk" path="res://assets/UI/MainMenu/btnPress.png" id="3_ljxwe"]
+[ext_resource type="Texture2D" uid="uid://cmahkp8hg823v" path="res://assets/UI/MainMenu/btnHover.png" id="4_7kssb"]
+[ext_resource type="FontFile" uid="uid://uvh2nwjnhknb" path="res://assets/fonts/enchanted_land.otf" id="6_rme3b"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vuoon"]
 font_size = 23
 
 [sub_resource type="LabelSettings" id="LabelSettings_k2fey"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ihfrb"]
+font = ExtResource("6_rme3b")
+font_size = 82
+font_color = Color(0.435294, 0.313726, 0.380392, 1)
+outline_size = 7
+outline_color = Color(0.776471, 0.65098, 0.717647, 1)
+shadow_size = 6
+shadow_color = Color(0, 0, 0, 1)
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -14,6 +28,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Bground" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(1.69706, 1.69271)
+texture = ExtResource("2_co2qr")
 
 [node name="Options" type="Label" parent="."]
 layout_mode = 0
@@ -25,6 +44,7 @@ text = "Options"
 label_settings = SubResource("LabelSettings_vuoon")
 
 [node name="Options" type="Label" parent="Options"]
+layout_mode = 0
 offset_left = 7.0
 offset_top = 119.0
 offset_right = 99.0
@@ -47,11 +67,29 @@ offset_top = 226.0
 offset_right = 708.0
 offset_bottom = 257.0
 
-[node name="BackBtn" type="Button" parent="."]
-layout_mode = 0
-offset_left = 521.0
-offset_top = 505.0
-offset_right = 600.0
-offset_bottom = 557.0
-text = "Back"
+[node name="QuitBtn" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 397.0
+offset_top = 540.0
+offset_right = 2615.0
+offset_bottom = 1007.0
+scale = Vector2(0.146418, 0.146418)
+texture_normal = ExtResource("2_swbkw")
+texture_pressed = ExtResource("3_ljxwe")
+texture_hover = ExtResource("4_7kssb")
 script = ExtResource("1_x6u3n")
+
+[node name="CenterContainer" type="CenterContainer" parent="QuitBtn"]
+layout_mode = 0
+offset_left = 881.588
+offset_top = 46.6038
+offset_right = 998.588
+offset_bottom = 143.604
+scale = Vector2(3.60365, 3.60365)
+
+[node name="Label" type="Label" parent="QuitBtn/CenterContainer"]
+layout_mode = 2
+text = "Back"
+label_settings = SubResource("LabelSettings_ihfrb")
+horizontal_alignment = 1
+vertical_alignment = 1
