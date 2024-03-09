@@ -4,33 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d549133908f71bbb",
+        "id": "6aa20b81045ed333",
         "type": "tabs",
         "children": [
           {
-            "id": "3e7f57652a669827",
+            "id": "98e8da7e47ffb712",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/assets/Aseprite/Aseprite.md",
+                "file": "The Darkest Crown.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "eec981858e192dcd",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.5.8"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "src/assets/Aseprite/Aseprite.md",
+                "file": "The Darkest Crown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "src/assets/Aseprite/Aseprite.md",
+                "file": "The Darkest Crown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "src/assets/Aseprite/Aseprite.md"
+                "file": "The Darkest Crown.md"
               }
             }
           },
@@ -179,12 +168,34 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "eec981858e192dcd",
+  "active": "98e8da7e47ffb712",
   "lastOpenFiles": [
+    "Inspiration.md",
+    "Attachments/Pasted image 20240307195753.png",
+    "src/assets/UI/MainMenu/v3_btnNormal.png.import",
+    "src/assets/UI/MainMenu/v3_btnNormal.png",
+    "src/assets/UI/MainMenu/v2_btnNormal.png.import",
+    "src/assets/UI/MainMenu/btnNormal - Copy.png",
+    "src/assets/UI/MainMenu/btnHover - Copy.png",
+    "src/assets/UI/MainMenu/btnPress - Copy.png",
+    "src/assets/UI/MainMenu/v2_btnNormal.png",
+    "src/assets/UI/MainMenu/@btnNormal.png.import",
+    "src/assets/UI/MainMenu/btnNormal.png",
+    "src/assets/UI/MainMenu/@btnNormal.png",
+    "src/assets/UI/MainMenu/_btnNormal.png",
+    "src/src.md",
+    "Attachments/Pasted image 20240307195706.png",
+    "Attachments/Attachments.md",
+    "Attachments",
+    "src/assets/assets.md",
+    "src/Properties/Properties.md",
+    "src/scripts/scripts.md",
+    "src/scripts/UI/UI.md",
+    "src/scripts/UI/MainMenu/MainMenu.md",
+    "src/assets/Aseprite/Aseprite.md",
     "src/assets/sounds/sounds.md",
     "src/assets/sprites/sprites.md",
     "src/assets/tiles/tiles.md",
-    "src/assets/assets.md",
     "src/debug_executables/debug_executables.md",
     "src/debug_executables/GodotSharp/GodotSharp.md",
     "src/debug_executables/GodotSharp/Api/Debug/Debug.md",
@@ -192,29 +203,17 @@
     "src/debug_executables/GodotSharp/Tools/nupkgs/nupkgs.md",
     "src/debug_executables/GodotSharp/Api/Api.md",
     "src/debug_executables/GodotSharp/Tools/Tools.md",
-    "src/Properties/Properties.md",
     "src/scenes/scenes.md",
     "src/scenes/entities/entities.md",
     "src/scenes/maps/maps.md",
     "src/scenes/objects/objects.md",
     "src/scenes/UI/UI.md",
-    "src/scripts/scripts.md",
-    "src/scripts/UI/UI.md",
-    "src/src.md",
     "Dashboard.md",
     "src/assets/tiles/gothicvania church files/PSD/title-screen.psd",
     "src/assets/tiles/gothicvania church files/PSD/concepts.psd",
-    "src/assets/tiles/gothicvania church files/PSD/PSD.md",
     "src/assets/tiles/gothicvania church files/PSD",
-    "src/assets/tiles/gothicvania church files/gothicvania church files.md",
     "src/assets/tiles/gothicvania church files",
-    "src/assets/Aseprite/Aseprite.md",
-    "src/assets/tiles/Old-dark-Castle-tileset-Files/Old-dark-Castle-tileset-Files.md",
-    "src/assets/tiles/Old-dark-Castle-tileset-Files/PSD/PSD.md",
-    "src/assets/sprites/characters/Ghost-Files/GIFS/ghost-appears.gif",
-    "src/assets/sprites/characters/04-Pig Throwing a Box/Throwing Box (26x30).png",
     "src/assets/sounds/ockaie_temple.ogg",
-    "The Darkest Crown",
-    "Planning"
+    "The Darkest Crown"
   ]
 }
