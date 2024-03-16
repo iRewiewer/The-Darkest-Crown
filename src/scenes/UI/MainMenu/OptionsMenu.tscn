@@ -31,7 +31,7 @@ grow_vertical = 2
 
 [node name="Bground" type="Sprite2D" parent="."]
 position = Vector2(576, 324)
-scale = Vector2(1.69706, 1.69271)
+scale = Vector2(0.643973, 0.634766)
 texture = ExtResource("2_co2qr")
 
 [node name="Options" type="Label" parent="."]
@@ -69,6 +69,7 @@ offset_bottom = 257.0
 
 [node name="QuitBtn" type="TextureButton" parent="."]
 texture_filter = 1
+layout_mode = 0
 offset_left = 397.0
 offset_top = 540.0
 offset_right = 2615.0

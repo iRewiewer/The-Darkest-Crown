@@ -30,7 +30,7 @@ grow_vertical = 2
 
 [node name="Bground" type="Sprite2D" parent="."]
 position = Vector2(576, 324)
-scale = Vector2(1.69706, 1.69271)
+scale = Vector2(0.643973, 0.634766)
 texture = ExtResource("1_qq3sl")
 
 [node name="Difficulty" type="MenuButton" parent="."]
@@ -54,6 +54,7 @@ popup/item_2/id = 2
 
 [node name="PlayBtn" type="TextureButton" parent="."]
 texture_filter = 1
+layout_mode = 0
 offset_left = 425.0
 offset_top = 552.0
 offset_right = 2643.0
