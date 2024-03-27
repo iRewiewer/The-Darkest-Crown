@@ -1,23 +1,26 @@
-[gd_scene load_steps=13 format=3 uid="uid://crvwl6a1hlhpu"]
+[gd_scene load_steps=16 format=3 uid="uid://crvwl6a1hlhpu"]
 
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/QuitBtn.cs" id="1_vsduf"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/MainMenu.cs" id="1_wrlmh"]
 [ext_resource type="PackedScene" uid="uid://tmxquhi0ia8a" path="res://scenes/UI/MainMenu/DebugMenu.tscn" id="2_wrs44"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/PlayBtn.cs" id="3_4sbdu"]
 [ext_resource type="Texture2D" uid="uid://dch3xbnqsqp0t" path="res://assets/UI/MainMenu/background.png" id="3_mpuy0"]
-[ext_resource type="Texture2D" uid="uid://5ano7sxpov3l" path="res://assets/UI/MainMenu/title.png" id="4_k6od1"]
+[ext_resource type="Texture2D" uid="uid://dgfkmghw4lstj" path="res://addons/title.png" id="4_82n61"]
 [ext_resource type="Script" path="res://scripts/UI/MainMenu/OptionsBtn.cs" id="4_qsemp"]
 [ext_resource type="Texture2D" uid="uid://b404je5vl023x" path="res://assets/UI/MainMenu/v2_btnNormal.png" id="5_bgnrx"]
 [ext_resource type="Texture2D" uid="uid://dw5c4oj35ojpk" path="res://assets/UI/MainMenu/btnPress.png" id="6_2e0da"]
 [ext_resource type="Texture2D" uid="uid://cmahkp8hg823v" path="res://assets/UI/MainMenu/btnHover.png" id="7_gmv12"]
+[ext_resource type="Texture2D" uid="uid://60v4v7fxwba4" path="res://assets/UI/MainMenu/play.png" id="9_dppq8"]
 [ext_resource type="FontFile" uid="uid://bffl45ojj3pmh" path="res://assets/fonts/the_blowar.ttf" id="9_xnp1e"]
+[ext_resource type="Texture2D" uid="uid://d0tbe66fj0mp2" path="res://assets/UI/MainMenu/options.png" id="12_ybw7a"]
+[ext_resource type="Texture2D" uid="uid://b1lou4usy1dw1" path="res://assets/UI/MainMenu/quit.png" id="14_xqagv"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ltagt"]
 line_spacing = 0.0
 font = ExtResource("9_xnp1e")
 font_size = 96
 font_color = Color(0.929412, 0.862745, 0.243137, 1)
-shadow_size = 0
+shadow_size = 4
 shadow_color = Color(0, 0, 0, 1)
 
 [node name="MainMenu" type="Control"]
@@ -26,7 +29,7 @@ anchors_preset = 0
 script = ExtResource("1_wrlmh")
 debugMenu = ExtResource("2_wrs44")
 
-[node name="BackgroundOriginal" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(575.95, 323.916)
 scale = Vector2(0.644029, 0.634929)
 texture = ExtResource("3_mpuy0")
@@ -35,7 +38,7 @@ texture = ExtResource("3_mpuy0")
 texture_filter = 1
 position = Vector2(550, 321)
 scale = Vector2(1.00583, 1.00583)
-texture = ExtResource("4_k6od1")
+texture = ExtResource("4_82n61")
 
 [node name="PlayBtn" type="TextureButton" parent="."]
 texture_filter = 1
@@ -58,7 +61,13 @@ offset_right = 1043.57
 offset_bottom = 161.694
 scale = Vector2(2.6012, 2.6012)
 
+[node name="Play" type="Sprite2D" parent="PlayBtn/CenterContainer"]
+position = Vector2(87.4933, 79.7727)
+scale = Vector2(1.18508, 1.18508)
+texture = ExtResource("9_dppq8")
+
 [node name="Label" type="Label" parent="PlayBtn/CenterContainer"]
+visible = false
 layout_mode = 2
 text = "PLAY"
 label_settings = SubResource("LabelSettings_ltagt")
@@ -86,7 +95,13 @@ offset_right = 1019.53
 offset_bottom = 161.694
 scale = Vector2(2.6012, 2.6012)
 
+[node name="Options" type="Sprite2D" parent="OptionsBtn/CenterContainer"]
+position = Vector2(156.972, 79.7728)
+scale = Vector2(1.185, 1.185)
+texture = ExtResource("12_ybw7a")
+
 [node name="Label" type="Label" parent="OptionsBtn/CenterContainer"]
+visible = false
 layout_mode = 2
 text = "OPTIONS"
 label_settings = SubResource("LabelSettings_ltagt")
@@ -114,7 +129,13 @@ offset_right = 1043.57
 offset_bottom = 161.694
 scale = Vector2(2.6012, 2.6012)
 
+[node name="Quit" type="Sprite2D" parent="QuitBtn/CenterContainer"]
+position = Vector2(90.0667, 87.4927)
+scale = Vector2(1.185, 1.185)
+texture = ExtResource("14_xqagv")
+
 [node name="Label" type="Label" parent="QuitBtn/CenterContainer"]
+visible = false
 layout_mode = 2
 text = "QUIT"
 label_settings = SubResource("LabelSettings_ltagt")

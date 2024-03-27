@@ -2,6 +2,9 @@ using System.Collections.Generic;
 
 public static class Const
 {
+	// TODO
+	// HACK
+	// FIXME
 	public static bool hasDebugMenuEnabled = false;
 	public static Dictionary<string, string> Configuration = new Dictionary<string, string>();
 	#region Paths

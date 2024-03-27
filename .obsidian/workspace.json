@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Darkest Crown.md",
+                "file": "Inspiration.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "The Darkest Crown.md",
+                "file": "Inspiration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "The Darkest Crown.md",
+                "file": "Inspiration.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "The Darkest Crown.md"
+                "file": "Inspiration.md"
               }
             }
           },
@@ -170,6 +170,7 @@
   },
   "active": "98e8da7e47ffb712",
   "lastOpenFiles": [
+    "The Darkest Crown.md",
     "Inspiration.md",
     "Attachments/Pasted image 20240307195753.png",
     "src/assets/UI/MainMenu/v3_btnNormal.png.import",

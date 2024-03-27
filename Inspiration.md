@@ -9,3 +9,7 @@
 
 # Gameplay
 
+
+# Misc
+
+[Fantasy Text Logo Generator (cooltext.com)](https://cooltext.com/Logo-Design-Fantasy)
