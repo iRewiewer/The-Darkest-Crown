@@ -1,24 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://dhvo4mqi0w6a5"]
+[gd_scene load_steps=7 format=3 uid="uid://dhvo4mqi0w6a5"]
 
-[ext_resource type="Script" path="res://scripts/UI/MainMenu/PlayGameBtn.cs" id="1_3fdqm"]
-[ext_resource type="Texture2D" uid="uid://b0n62katgrr27" path="res://assets/UI/MainMenu/bground.png" id="1_qq3sl"]
-[ext_resource type="Texture2D" uid="uid://vt5mwwnfbur2" path="res://assets/UI/MainMenu/btnNormal.png" id="2_tjf8j"]
-[ext_resource type="Texture2D" uid="uid://dw5c4oj35ojpk" path="res://assets/UI/MainMenu/btnPress.png" id="3_eepvr"]
-[ext_resource type="Texture2D" uid="uid://cmahkp8hg823v" path="res://assets/UI/MainMenu/btnHover.png" id="4_4df4i"]
-[ext_resource type="FontFile" uid="uid://uvh2nwjnhknb" path="res://assets/fonts/enchanted_land.otf" id="6_muhf3"]
-
-[sub_resource type="Theme" id="Theme_08s7c"]
-default_font = ExtResource("6_muhf3")
-default_font_size = 128
-
-[sub_resource type="LabelSettings" id="LabelSettings_3mkyq"]
-font = ExtResource("6_muhf3")
-font_size = 82
-font_color = Color(0.435294, 0.313726, 0.380392, 1)
-outline_size = 7
-outline_color = Color(0.776471, 0.65098, 0.717647, 1)
-shadow_size = 6
-shadow_color = Color(0, 0, 0, 1)
+[ext_resource type="Script" path="res://scripts/UI/MainMenu/MainMenuButton.cs" id="1_3fdqm"]
+[ext_resource type="Texture2D" uid="uid://dch3xbnqsqp0t" path="res://assets/UI/MainMenu/background.png" id="1_qq3sl"]
+[ext_resource type="Texture2D" uid="uid://dy4gtr6iic2fg" path="res://assets/UI/MainMenu/back.png" id="4_4df4i"]
+[ext_resource type="Texture2D" uid="uid://d1sgx273ejpd1" path="res://assets/UI/MainMenu/combat.png" id="4_8fc1h"]
+[ext_resource type="Texture2D" uid="uid://p83e21pa1mxm" path="res://assets/UI/MainMenu/story.png" id="4_8qj6g"]
+[ext_resource type="Texture2D" uid="uid://wgk00lvcq148" path="res://assets/UI/MainMenu/difficulty.png" id="4_km0hw"]
 
 [node name="PlayMenu" type="Control"]
 layout_mode = 3
@@ -33,49 +20,48 @@ position = Vector2(576, 324)
 scale = Vector2(0.643973, 0.634766)
 texture = ExtResource("1_qq3sl")
 
-[node name="Difficulty" type="MenuButton" parent="."]
-layout_mode = 0
-offset_left = 280.0
-offset_top = 269.0
-offset_right = 2630.0
-offset_bottom = 744.0
-scale = Vector2(0.249697, 0.249697)
-theme = SubResource("Theme_08s7c")
-text = "Select Difficulty"
-icon = ExtResource("3_eepvr")
-icon_alignment = 1
-item_count = 3
-popup/item_0/text = "Easy"
-popup/item_0/id = 0
-popup/item_1/text = "Medium"
-popup/item_1/id = 1
-popup/item_2/text = "Hard"
-popup/item_2/id = 2
+[node name="Panel" type="ColorRect" parent="."]
+offset_left = 73.0
+offset_top = 44.0
+offset_right = 97.0
+offset_bottom = 58.0
+scale = Vector2(42.7368, 40.9234)
+color = Color(0, 0, 0, 0.745098)
 
-[node name="PlayBtn" type="TextureButton" parent="."]
-texture_filter = 1
-layout_mode = 0
-offset_left = 425.0
-offset_top = 552.0
-offset_right = 2643.0
-offset_bottom = 1019.0
-scale = Vector2(0.147418, 0.147418)
-texture_normal = ExtResource("2_tjf8j")
-texture_pressed = ExtResource("3_eepvr")
-texture_hover = ExtResource("4_4df4i")
+[node name="BackToMainMenuBtn" type="Button" parent="."]
+offset_left = 525.0
+offset_top = 532.0
+offset_right = 712.0
+offset_bottom = 632.0
+scale = Vector2(0.615358, 0.615358)
+focus_mode = 0
+icon = ExtResource("4_4df4i")
+flat = true
 script = ExtResource("1_3fdqm")
 
-[node name="CenterContainer" type="CenterContainer" parent="PlayBtn"]
-layout_mode = 0
-offset_left = 624.076
-offset_top = 54.2676
-offset_right = 892.076
-offset_bottom = 151.268
-scale = Vector2(3.60365, 3.60365)
+[node name="StoryBtn" type="Button" parent="."]
+offset_left = 172.0
+offset_top = 253.0
+offset_right = 450.0
+offset_bottom = 421.0
+scale = Vector2(0.945157, 0.945157)
+focus_mode = 0
+icon = ExtResource("4_8qj6g")
+flat = true
+script = ExtResource("1_3fdqm")
 
-[node name="Label" type="Label" parent="PlayBtn/CenterContainer"]
-layout_mode = 2
-text = "Start"
-label_settings = SubResource("LabelSettings_3mkyq")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="CombatBtn" type="Button" parent="."]
+offset_left = 730.0
+offset_top = 246.0
+offset_right = 1008.0
+offset_bottom = 418.0
+scale = Vector2(0.942895, 0.942895)
+focus_mode = 0
+icon = ExtResource("4_8fc1h")
+flat = true
+script = ExtResource("1_3fdqm")
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(606, 103)
+scale = Vector2(0.887521, 0.887521)
+texture = ExtResource("4_km0hw")

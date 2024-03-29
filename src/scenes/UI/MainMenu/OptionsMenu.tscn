@@ -1,25 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5s1xf7sc7spd"]
+[gd_scene load_steps=6 format=3 uid="uid://b5s1xf7sc7spd"]
 
-[ext_resource type="Script" path="res://scripts/UI/MainMenu/BackBtn.cs" id="1_x6u3n"]
-[ext_resource type="Texture2D" uid="uid://b0n62katgrr27" path="res://assets/UI/MainMenu/bground.png" id="2_co2qr"]
-[ext_resource type="Texture2D" uid="uid://vt5mwwnfbur2" path="res://assets/UI/MainMenu/btnNormal.png" id="2_swbkw"]
-[ext_resource type="Texture2D" uid="uid://dw5c4oj35ojpk" path="res://assets/UI/MainMenu/btnPress.png" id="3_ljxwe"]
-[ext_resource type="Texture2D" uid="uid://cmahkp8hg823v" path="res://assets/UI/MainMenu/btnHover.png" id="4_7kssb"]
-[ext_resource type="FontFile" uid="uid://uvh2nwjnhknb" path="res://assets/fonts/enchanted_land.otf" id="6_rme3b"]
+[ext_resource type="Texture2D" uid="uid://dch3xbnqsqp0t" path="res://assets/UI/MainMenu/background.png" id="1_uy78x"]
+[ext_resource type="Script" path="res://scripts/UI/MainMenu/MainMenuButton.cs" id="1_x6u3n"]
+[ext_resource type="Texture2D" uid="uid://dy4gtr6iic2fg" path="res://assets/UI/MainMenu/back.png" id="2_omah7"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vuoon"]
 font_size = 23
 
 [sub_resource type="LabelSettings" id="LabelSettings_k2fey"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_ihfrb"]
-font = ExtResource("6_rme3b")
-font_size = 82
-font_color = Color(0.435294, 0.313726, 0.380392, 1)
-outline_size = 7
-outline_color = Color(0.776471, 0.65098, 0.717647, 1)
-shadow_size = 6
-shadow_color = Color(0, 0, 0, 1)
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -29,10 +17,19 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Bground" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(576, 324)
 scale = Vector2(0.643973, 0.634766)
-texture = ExtResource("2_co2qr")
+texture = ExtResource("1_uy78x")
+
+[node name="Panel" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 55.0
+offset_right = 364.0
+offset_bottom = 95.0
+scale = Vector2(12.3389, 14.0341)
+color = Color(0, 0, 0, 0.745098)
 
 [node name="Options" type="Label" parent="."]
 layout_mode = 0
@@ -43,7 +40,15 @@ offset_bottom = 108.0
 text = "Options"
 label_settings = SubResource("LabelSettings_vuoon")
 
-[node name="Options" type="Label" parent="Options"]
+[node name="VSync" type="CheckButton" parent="Options"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 51.0
+offset_right = 96.0
+offset_bottom = 82.0
+text = "VSync"
+
+[node name="Volume" type="Label" parent="Options"]
 layout_mode = 0
 offset_left = 7.0
 offset_top = 119.0
@@ -52,45 +57,21 @@ offset_bottom = 153.0
 text = "Volume:"
 label_settings = SubResource("LabelSettings_k2fey")
 
-[node name="VSync" type="CheckButton" parent="."]
+[node name="Slider" type="HSlider" parent="Options/Volume"]
 layout_mode = 0
-offset_left = 510.0
-offset_top = 125.0
-offset_right = 554.0
-offset_bottom = 149.0
-text = "VSync"
+offset_left = -126.0
+offset_top = 33.0
+offset_right = 193.0
+offset_bottom = 64.0
 
-[node name="Volume" type="HSlider" parent="."]
+[node name="BackToMainMenuBtn" type="Button" parent="."]
 layout_mode = 0
-offset_left = 389.0
-offset_top = 226.0
-offset_right = 708.0
-offset_bottom = 257.0
-
-[node name="QuitBtn" type="TextureButton" parent="."]
-texture_filter = 1
-layout_mode = 0
-offset_left = 397.0
-offset_top = 540.0
-offset_right = 2615.0
-offset_bottom = 1007.0
-scale = Vector2(0.146418, 0.146418)
-texture_normal = ExtResource("2_swbkw")
-texture_pressed = ExtResource("3_ljxwe")
-texture_hover = ExtResource("4_7kssb")
+offset_left = 505.0
+offset_top = 526.0
+offset_right = 692.0
+offset_bottom = 626.0
+scale = Vector2(0.615358, 0.615358)
+focus_mode = 0
+icon = ExtResource("2_omah7")
+flat = true
 script = ExtResource("1_x6u3n")
-
-[node name="CenterContainer" type="CenterContainer" parent="QuitBtn"]
-layout_mode = 0
-offset_left = 881.588
-offset_top = 46.6038
-offset_right = 998.588
-offset_bottom = 143.604
-scale = Vector2(3.60365, 3.60365)
-
-[node name="Label" type="Label" parent="QuitBtn/CenterContainer"]
-layout_mode = 2
-text = "Back"
-label_settings = SubResource("LabelSettings_ihfrb")
-horizontal_alignment = 1
-vertical_alignment = 1

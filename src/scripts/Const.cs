@@ -9,10 +9,14 @@ public static class Const
 	public static Dictionary<string, string> Configuration = new Dictionary<string, string>();
 	#region Paths
 	#region Scenes
-	public static string mainMenuPath = "res://scenes/UI/MainMenu/MainMenu.tscn";
-	public static string playMenuPath = "res://scenes/UI/MainMenu/PlayMenu.tscn";
-	public static string optionsMenuPath = "res://scenes/UI/MainMenu/OptionsMenu.tscn";
-	public static string queenDemoPath = "res://scenes/maps/QueenMap_Demo.tscn";
+	public static Dictionary<string, string> scenePaths = new Dictionary<string, string>()
+	{
+		{ "BackToMainMenuBtn", "res://scenes/UI/MainMenu/MainMenu.tscn" },
+		{ "PlayBtn", "res://scenes/UI/MainMenu/PlayMenu.tscn" },
+		{ "OptionsBtn", "res://scenes/UI/MainMenu/OptionsMenu.tscn" },
+		{ "StoryBtn", "res://scenes/maps/QueenMap_Demo.tscn" },
+		{ "CombatBtn", "res://scenes/maps/QueenMap_Demo.tscn" }
+	};
 	#endregion
 	#endregion
 }

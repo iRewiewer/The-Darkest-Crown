@@ -37,6 +37,11 @@ public partial class MainMenu : Control
 				Const.hasDebugMenuEnabled = true;
 			}
 		}
+
+		if (Input.IsActionPressed("quitGame"))
+		{
+			DebugMenu.QuitGame(this);
+		}
 	}
 	#endregion
 

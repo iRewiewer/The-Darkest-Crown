@@ -64,5 +64,5 @@ position = Vector2(-3, 0)
 script = ExtResource("2_ricii")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(144, 560)
-zoom = Vector2(4, 4)
+position = Vector2(195, 532)
+zoom = Vector2(3, 3)

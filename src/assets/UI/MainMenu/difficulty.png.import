@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vt5mwwnfbur2"
-path="res://.godot/imported/btnNormal.png-223476ce8c82366713c65706ae75d27d.ctex"
+uid="uid://wgk00lvcq148"
+path="res://.godot/imported/difficulty.png-8bcedea4aac8e7fddcf7ced7bdc6723f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/MainMenu/btnNormal.png"
-dest_files=["res://.godot/imported/btnNormal.png-223476ce8c82366713c65706ae75d27d.ctex"]
+source_file="res://assets/UI/MainMenu/difficulty.png"
+dest_files=["res://.godot/imported/difficulty.png-8bcedea4aac8e7fddcf7ced7bdc6723f.ctex"]
 
 [params]
 
