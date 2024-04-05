@@ -46,3 +46,14 @@
 		- [ ] Diablo 1 style mini-map
 		- [ ] Death Screen
 		- [ ] Win Screen
+
+Until next meeting:
+- Pop:
+	- More tiles for the zone
+	- Design first enemy
+	- (Optional) Implement basic movement
+- Petre:
+	- Basic player scene
+	- Basic movement
+- Roti:
+	- Zone concept & layout
