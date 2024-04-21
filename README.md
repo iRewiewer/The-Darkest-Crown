@@ -20,7 +20,7 @@
 			- [ ] Melee enemy
 			- [ ] Quirky enemy
 		- [ ] 4 bosses AI
-			- [ ] Mother
+			- [ ] Mother (Dark Purple, Gothic, Quartz)
 				- [ ] Pop + zones
 			- [ ] Father
 				- [ ] Roti + zones
@@ -49,8 +49,8 @@
 
 Until next meeting:
 - Pop:
-	- More tiles for the zone
-	- Design first enemy
+	- More animations
+	- Mob 2
 	- (Optional) Implement basic movement
 - Petre:
 	- Basic player scene

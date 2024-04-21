@@ -13,3 +13,4 @@
 # Misc
 
 [Fantasy Text Logo Generator (cooltext.com)](https://cooltext.com/Logo-Design-Fantasy)
+[Akatori Chapter One](https://store.steampowered.com/app/2524680/Akatori_hapter_One/)
