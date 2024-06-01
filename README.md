@@ -1,10 +1,15 @@
-- [ ] Map design - All
+- [ ] Map design
 	- [ ] 4 zones
-	- [ ] Each with \<x> rooms
-	- [ ] 4th zone just final boss fight no rooms
+		- [ ] Mother Zone (Mother)
+			- [ ] 4 rooms + boss room
+		- [ ] Father Zone (Roti)
+			- [ ] \<x> rooms
+		- [ ] Brother Zone (Petre)
+			- [ ]  \<x> rooms
+		- [ ] Self
 - [ ] Combat
-	- [ ] Sword attack(s) - Roti
-	- [ ] Powerups - Petre
+	- [ ] Sword attack(s) (Roti)
+	- [ ] Powerups (Petre)
 		- [ ] Firesword ball
 			- [ ] if enemy in front - hits enemy
 			- [ ] if not - shoots ball
@@ -12,32 +17,36 @@
 		- [ ] Lunge attack - torpedo with iframes thru enemies
 		- [ ] Shield buff
 		- [ ] Heal buff
-	- [ ] Dash
+	- [ ] Dash (Roti)
 - [ ] Backend scripts
-	- [ ] Per enemy AI
-		- [ ] 3 types of enemies / zone
-			- [ ] Ranged enemy
-			- [ ] Melee enemy
-			- [ ] Quirky enemy
-		- [ ] 4 bosses AI
-			- [ ] Mother (Dark Purple, Gothic, Quartz)
-				- [ ] Pop + zones
-			- [ ] Father
-				- [ ] Roti + zones
-			- [ ] Brother
-				- [ ] Petre + zones
-			- [ ] Self
-				- [ ] Can do anything the player can, but better
-	- [ ] Player - Petre
+	- [ ] Mother Zone (Pop) (Dark Purple, Gothic, Quartz)
+		- [x] Melee ✅ 2024-04-26
+		- [ ] Ranged
+		- [ ] Quirky
+		- [ ] Boss
+	- [ ] Father Zone (Roti)
+		- [ ] Melee
+		- [ ] Ranged
+		- [ ] Quirky
+		- [ ] Boss
+	- [ ] Brother Zone (Petre)
+		- [ ] Melee
+		- [ ] Ranged
+		- [ ] Quirky
+		- [ ] Boss
+	- [ ] Self Zone
+		- [ ] Just boss fight, can do anything the player can, but better
+	- [ ] Player (Petre)
 		- [ ] Movement
 		- [ ] Attack
 		- [ ] Jump
 			- [ ] Double Jump
 			- [ ] Slide on wall
 			- [ ] Wall jump
-- [ ] UI - Pop
+- [ ] UI (Pop)
 	- [ ] Menus
-		- [ ] Options
+		- [x] Main Menu ✅ 2024-04-26
+		- [ ] Options Menu
 		- [ ] Dialogue
 			- [ ] Beginning & End cutscenes
 			- [ ] When going thru zones, will hear dialogue from that zone's boss

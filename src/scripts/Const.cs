@@ -15,7 +15,8 @@ public static class Const
 		{ "PlayBtn", "res://scenes/UI/MainMenu/PlayMenu.tscn" },
 		{ "OptionsBtn", "res://scenes/UI/MainMenu/OptionsMenu.tscn" },
 		{ "StoryBtn", "res://scenes/maps/QueenMap_Demo.tscn" },
-		{ "CombatBtn", "res://scenes/maps/QueenMap_Demo.tscn" }
+		{ "CombatBtn", "res://scenes/maps/QueenMap_Demo.tscn" },
+		{ "Fireball", "res://scenes/entities/Fireball.tscn" }
 	};
 	#endregion
 	#endregion

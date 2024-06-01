@@ -170,6 +170,14 @@
   },
   "active": "98e8da7e47ffb712",
   "lastOpenFiles": [
+    "src/assets/queenZone/mobs/quirky/quirky.md",
+    "src/assets/queenZone/mobs/quirky/New folder.md",
+    "src/assets/queenZone/mobs/quirky",
+    "src/assets/queenZone/mobs/New folder/New folder.md",
+    "src/assets/queenZone/mobs/New folder",
+    "src/assets/queenZone/mobs/ranged/ranged.md",
+    "src/assets/queenZone/mobs/ranged/New folder.md",
+    "src/assets/queenZone/mobs/ranged",
     "Inspiration.md",
     "The Darkest Crown.md",
     "Attachments/Pasted image 20240307195753.png",
@@ -205,16 +213,8 @@
     "src/debug_executables/GodotSharp/Api/Api.md",
     "src/debug_executables/GodotSharp/Tools/Tools.md",
     "src/scenes/scenes.md",
-    "src/scenes/entities/entities.md",
-    "src/scenes/maps/maps.md",
-    "src/scenes/objects/objects.md",
-    "src/scenes/UI/UI.md",
-    "Dashboard.md",
     "src/assets/tiles/gothicvania church files/PSD/title-screen.psd",
     "src/assets/tiles/gothicvania church files/PSD/concepts.psd",
-    "src/assets/tiles/gothicvania church files/PSD",
-    "src/assets/tiles/gothicvania church files",
-    "src/assets/sounds/ockaie_temple.ogg",
-    "The Darkest Crown"
+    "src/assets/tiles/gothicvania church files/PSD"
   ]
 }

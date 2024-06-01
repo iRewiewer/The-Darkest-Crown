@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0wbge1dcqkkb"]
+
+[ext_resource type="Texture2D" uid="uid://dhnusr7s6spq5" path="res://assets/queenZone/projectile/purple_fireball.png" id="1_n2h7g"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_w5f4i"]
+
+[node name="Fireball" type="Node2D"]
+
+[node name="PurpleFireball" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(42, 41)
+scale = Vector2(1.92664, 1.92664)
+texture = ExtResource("1_n2h7g")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(42, 41)
+scale = Vector2(4.14272, 4.14272)
+shape = SubResource("CircleShape2D_w5f4i")
