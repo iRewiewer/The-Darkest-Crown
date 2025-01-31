@@ -2,17 +2,18 @@ using Godot;
 
 public partial class OptionsMenu : Control
 {
-	#region Public variables
+    Public variables
 	#endregion
-	#region Private variables
+	 Private variables
 	#endregion
 
-	#region Public methods
-	public override void _Ready()
-	{
-		// load Const.Configuration into each thing in here
-	}
-	#endregion
-	#region Private methods
+	 Public methods
+
+    public override void _Ready()
+    {
+        // load Const.Configuration into each thing in here
+    }
+#endregion
+    Private methods
 	#endregion
 }
